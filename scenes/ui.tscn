@@ -1,0 +1,57 @@
+[gd_scene format=3 uid="uid://cpujc7erlcci5"]
+
+[ext_resource type="Script" uid="uid://dgujj2fifucrp" path="res://scripts/ui.gd" id="1_nt7q6"]
+
+[sub_resource type="StyleBoxFlat" id="StyleBoxFlat_nt7q6"]
+bg_color = Color(0.7607843, 0, 0.94509804, 1)
+
+[node name="UI" type="Control" unique_id=34196508]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_nt7q6")
+
+[node name="CanvasLayer" type="CanvasLayer" parent="." unique_id=771398113]
+process_mode = 3
+
+[node name="end_conteiner" type="VBoxContainer" parent="CanvasLayer" unique_id=228527399]
+visible = false
+custom_minimum_size = Vector2(35, 0.12)
+offset_left = 252.0
+offset_top = 213.0
+offset_right = 372.0
+offset_bottom = 263.0
+alignment = 2
+
+[node name="Restart" type="Button" parent="CanvasLayer/end_conteiner" unique_id=1162170493]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_nt7q6")
+text = "Restart game"
+
+[node name="Main_menu" type="Button" parent="CanvasLayer/end_conteiner" unique_id=1116810792]
+layout_mode = 2
+size_flags_vertical = 4
+theme_override_styles/normal = SubResource("StyleBoxFlat_nt7q6")
+text = "Back to menu"
+
+[node name="score" type="Label" parent="CanvasLayer" unique_id=1715019423 groups=["score"]]
+offset_left = 190.0
+offset_top = 174.0
+offset_right = 434.0
+offset_bottom = 197.0
+theme_override_colors/font_color = Color(0.8762364, 0.36292732, 1.92523e-07, 1)
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1727806815]
+layout_mode = 0
+offset_left = -3.0
+offset_top = -4.0
+offset_right = 643.0
+offset_bottom = 365.0
+color = Color(0.96230525, 1, 0.57692355, 1)
+
+[connection signal="pressed" from="CanvasLayer/end_conteiner/Restart" to="." method="_on_restart_pressed"]
+[connection signal="pressed" from="CanvasLayer/end_conteiner/Main_menu" to="." method="_on_main_menu_pressed"]

@@ -1,0 +1,15 @@
+[gd_scene format=3 uid="uid://dbw2erf026qiv"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
+size = Vector2(23, 157)
+
+[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["puddle"]]
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1052643236]
+offset_right = 23.0
+offset_bottom = 157.0
+color = Color(0.9748084, 0.39168906, 0.7527415, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=194776558]
+position = Vector2(11.5, 78.5)
+shape = SubResource("RectangleShape2D_u8vuu")

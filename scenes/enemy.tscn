@@ -1,0 +1,18 @@
+[gd_scene format=3 uid="uid://bchu3cuavaxbq"]
+
+[ext_resource type="Script" uid="uid://ma434epkk32t" path="res://scripts/enemy.gd" id="1_7p1mj"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
+size = Vector2(23, 157)
+
+[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["puddle"]]
+script = ExtResource("1_7p1mj")
+
+[node name="ColorRect" type="ColorRect" parent="." unique_id=1052643236]
+offset_right = 23.0
+offset_bottom = 157.0
+color = Color(0.99374264, 0.6904947, 0.8682267, 1)
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="." unique_id=194776558]
+position = Vector2(11.5, 78.5)
+shape = SubResource("RectangleShape2D_u8vuu")
