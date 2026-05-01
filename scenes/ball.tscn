@@ -7,6 +7,7 @@
 radius = 10.227273
 
 [node name="ball" type="CharacterBody2D" unique_id=849525474 groups=["ball"]]
+process_mode = 1
 script = ExtResource("1_cxlvu")
 metadata/_edit_horizontal_guides_ = [-64.0]
 

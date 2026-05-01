@@ -2,7 +2,6 @@
 
 [ext_resource type="PackedScene" uid="uid://dbw2erf026qiv" path="res://scenes/player.tscn" id="1_o5qli"]
 [ext_resource type="PackedScene" uid="uid://cpujc7erlcci5" path="res://scenes/ui.tscn" id="1_tbgi4"]
-[ext_resource type="PackedScene" uid="uid://ddtnctw3bkhtv" path="res://scenes/match_manager.tscn" id="1_tefeu"]
 [ext_resource type="Script" uid="uid://b4xhbjxwfogv1" path="res://scripts/player.gd" id="2_0wfyh"]
 [ext_resource type="PackedScene" uid="uid://mcu4rgiwcovj" path="res://scenes/ball.tscn" id="3_sugp2"]
 [ext_resource type="PackedScene" uid="uid://bchu3cuavaxbq" path="res://scenes/enemy.tscn" id="4_jyhfs"]
@@ -27,5 +26,3 @@ rotation = 1.5707964
 [node name="player2" parent="." unique_id=1479094104 instance=ExtResource("4_jyhfs")]
 position = Vector2(417, 2)
 rotation = 1.5707964
-
-[node name="Node2D" parent="." unique_id=483322116 instance=ExtResource("1_tefeu")]

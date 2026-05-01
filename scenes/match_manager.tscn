@@ -1,0 +1,7 @@
+[gd_scene format=3 uid="uid://ddtnctw3bkhtv"]
+
+[ext_resource type="Script" uid="uid://cql24xa5rmos" path="res://scripts/match_manager.gd" id="1_sitfs"]
+
+[node name="Node2D" type="Node2D" unique_id=483322116 groups=["score_manager"]]
+process_mode = 3
+script = ExtResource("1_sitfs")

@@ -20,10 +20,10 @@ process_mode = 3
 [node name="end_conteiner" type="VBoxContainer" parent="CanvasLayer" unique_id=228527399]
 visible = false
 custom_minimum_size = Vector2(35, 0.12)
-offset_left = 252.0
-offset_top = 213.0
-offset_right = 372.0
-offset_bottom = 263.0
+offset_left = 275.0
+offset_top = 183.0
+offset_right = 395.0
+offset_bottom = 233.0
 alignment = 2
 
 [node name="Restart" type="Button" parent="CanvasLayer/end_conteiner" unique_id=1162170493]
@@ -39,11 +39,12 @@ theme_override_styles/normal = SubResource("StyleBoxFlat_nt7q6")
 text = "Back to menu"
 
 [node name="score" type="Label" parent="CanvasLayer" unique_id=1715019423 groups=["score"]]
-offset_left = 190.0
-offset_top = 174.0
-offset_right = 434.0
-offset_bottom = 197.0
+offset_left = 208.0
+offset_top = 151.0
+offset_right = 452.0
+offset_bottom = 174.0
 theme_override_colors/font_color = Color(0.8762364, 0.36292732, 1.92523e-07, 1)
+horizontal_alignment = 1
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1727806815]
 layout_mode = 0

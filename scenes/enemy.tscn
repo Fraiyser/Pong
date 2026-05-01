@@ -5,7 +5,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(23, 157)
 
-[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["puddle"]]
+[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["ai", "puddle"]]
+process_mode = 1
 script = ExtResource("1_7p1mj")
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1052643236]

@@ -7,6 +7,14 @@ extends Control
 @onready var back_button = $Back
 @onready var toggle_difficulty = $Main_panel/ModeContainer2/CheckButton
 
+func _ready() -> void:
+	if Global.enemy_speed == 1000:
+		toggle_difficulty.button_pressed = true
+		toggle_difficulty.text = "difficulty mode: Hard"
+	else:
+		toggle_difficulty.button_pressed = false
+		toggle_difficulty.text = "difficulty mode: Easy"
+
 
 func _on_settings_pressed() -> void:
 	menu_container.hide()
@@ -45,6 +53,7 @@ func _on_check_button_toggled(toggled_on: bool) -> void:
 	else:
 		Global.enemy_speed = 500
 		toggle_difficulty.text = ("difficulty mode: Easy")
+
 
 
 func _on_exit_pressed() -> void:

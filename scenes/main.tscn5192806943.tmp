@@ -9,6 +9,10 @@
 
 [node name="main" type="Node2D" unique_id=526071593]
 
+[node name="Node2D" parent="." unique_id=483322116 instance=ExtResource("1_tefeu")]
+position = Vector2(336, 161)
+rotation = 1.5707964
+
 [node name="UI" parent="." unique_id=34196508 instance=ExtResource("1_tbgi4")]
 offset_left = 1.0
 offset_top = -1.0
@@ -27,5 +31,3 @@ rotation = 1.5707964
 [node name="player2" parent="." unique_id=1479094104 instance=ExtResource("4_jyhfs")]
 position = Vector2(417, 2)
 rotation = 1.5707964
-
-[node name="Node2D" parent="." unique_id=483322116 instance=ExtResource("1_tefeu")]

@@ -3,7 +3,8 @@
 [sub_resource type="RectangleShape2D" id="RectangleShape2D_u8vuu"]
 size = Vector2(23, 157)
 
-[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["puddle"]]
+[node name="player" type="CharacterBody2D" unique_id=1596908317 groups=["player", "puddle"]]
+process_mode = 1
 
 [node name="ColorRect" type="ColorRect" parent="." unique_id=1052643236]
 offset_right = 23.0
